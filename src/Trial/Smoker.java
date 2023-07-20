@@ -1,3 +1,5 @@
+package Trial;
+
 import java.util.concurrent.Semaphore;
 
 class Smoker {

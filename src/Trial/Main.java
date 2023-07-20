@@ -1,3 +1,5 @@
+package Trial;
+
 import java.util.*;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -7,9 +9,9 @@ import java.util.concurrent.locks.ReentrantLock;
 class Main {
     public static void main(String[] args) {
         List<Smoker> smokerList = List.of(
-                new Smoker("Smoker 1", "tobacco", "paper", "matches", new Semaphore(0)),
-                new Smoker("Smoker 2", "paper", "tobacco", "matches", new Semaphore(0)),
-                new Smoker("Smoker 3", "matches", "paper", "tobacco", new Semaphore(0))
+                new Smoker("Trial.Smoker 1", "tobacco", "paper", "matches", new Semaphore(0)),
+                new Smoker("Trial.Smoker 2", "paper", "tobacco", "matches", new Semaphore(0)),
+                new Smoker("Trial.Smoker 3", "matches", "paper", "tobacco", new Semaphore(0))
         );
 
         Semaphore agentSemaphore = new Semaphore(1);
